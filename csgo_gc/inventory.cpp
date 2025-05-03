@@ -4,6 +4,7 @@
 #include "keyvalue.h"
 #include "random.h"
 
+
 // keys, cases, stickers...
 #define DESTROY_USED_ITEMS
 
