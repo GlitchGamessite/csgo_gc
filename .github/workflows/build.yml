@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     env:
-      SCCACHE_GHA_ENABLED: "true"
+      SCCACHE_GHA_ENABLED: "false"
 
     strategy:
       matrix:
