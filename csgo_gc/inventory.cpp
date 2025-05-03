@@ -5,7 +5,7 @@
 #include "random.h"
 
 // keys, cases, stickers...
-//#define DESTORY_USED_ITEMS
+#define DESTROY_USED_ITEMS
 
 constexpr const char *InventoryFilePath = "csgo_gc/inventory.txt";
 
@@ -483,7 +483,7 @@ bool Inventory::UnlockCrate(uint64_t crateId,
     notification.set_request(k_EGCItemCustomizationNotification_UnlockCrate);
 
     // remove the crate
-#ifdef DESTORY_USED_ITEMS
+#ifdef DESTROY_USED_ITEMS
     DestroyItem(crate, destroyCrate);
     
     // remove the key if one was used (yes, we don't validate keys...)
